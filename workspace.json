@@ -2,6 +2,7 @@
   "version": 2,
   "projects": {
     "nx-error": "apps/nx-error",
-    "nx-error-e2e": "apps/nx-error-e2e"
+    "nx-error-e2e": "apps/nx-error-e2e",
+    "test-backend": "apps/test-backend"
   }
 }
