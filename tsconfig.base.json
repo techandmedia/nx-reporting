@@ -14,7 +14,9 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@nx-error/ui-components-v1": ["libs/ui-components-v1/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

@@ -1,0 +1,23 @@
+{
+  "root": "libs/ui-components-v1",
+  "sourceRoot": "libs/ui-components-v1/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/ui-components-v1/**/*.{ts,tsx,js,jsx}"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/ui-components-v1"],
+      "options": {
+        "jestConfig": "libs/ui-components-v1/jest.config.js",
+        "passWithNoTests": true
+      }
+    }
+  }
+}

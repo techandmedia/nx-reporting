@@ -2,6 +2,7 @@
   "version": 2,
   "projects": {
     "nx-error": "apps/nx-error",
-    "nx-error-e2e": "apps/nx-error-e2e"
+    "nx-error-e2e": "apps/nx-error-e2e",
+    "ui-components-v1": "libs/ui-components-v1"
   }
 }
