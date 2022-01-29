@@ -1,0 +1,28 @@
+{
+  "root": "apps/nx-error-e2e",
+  "sourceRoot": "apps/nx-error-e2e/src",
+  "projectType": "application",
+  "targets": {
+    "e2e": {
+      "executor": "@nrwl/cypress:cypress",
+      "options": {
+        "cypressConfig": "apps/nx-error-e2e/cypress.json",
+        "devServerTarget": "nx-error:serve"
+      },
+      "configurations": {
+        "production": {
+          "devServerTarget": "nx-error:serve:production"
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/nx-error-e2e/**/*.{js,ts}"]
+      }
+    }
+  },
+  "tags": [],
+  "implicitDependencies": ["nx-error"]
+}
